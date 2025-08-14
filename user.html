@@ -9,8 +9,8 @@
             rel="stylesheet"
         />
         <title>user</title>
-      <script type="module" crossorigin src="/web-layout-training-vite/assets/main-CCh4HPej.js"></script>
-      <link rel="stylesheet" crossorigin href="/web-layout-training-vite/assets/main-mkV2AbcS.css">
+      <script type="module" crossorigin src="/web-layout-training-vite/assets/main-CjPAP7Cf.js"></script>
+      <link rel="stylesheet" crossorigin href="/web-layout-training-vite/assets/main-rhiUWbcn.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -44,6 +44,7 @@
             <div class="container section-padding">
                 <div class="row justify-content-center">
                     <div class="col-10">
+                        <!-- 導覽列 -->
                         <ul
                             class="nav nav-pills justify-content-center mb-4"
                             id="pills-tab"
@@ -69,7 +70,7 @@
                             </li>
                             <li class="nav-item me-4" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link border rounded-3"
                                     id="pills-record-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-record"
@@ -87,7 +88,7 @@
                             </li>
                             <li class="nav-item me-4" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link border rounded-3"
                                     id="pills-plan-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-plan"
@@ -104,6 +105,7 @@
                                 </button>
                             </li>
                         </ul>
+                        <!-- 選單項目 -->
                         <div
                             class="tab-content p-5 shadow round-panel"
                             id="pills-tabContent"
@@ -115,7 +117,285 @@
                                 role="tabpanel"
                                 aria-labelledby="pills-info-tab"
                             >
-                                個人資料內容
+                                <div class="d-flex gap-4 pb-5">
+                                    <!-- 左側 -->
+                                    <div class="flex-shrink-0 side-width">
+                                        <h2 class="fs-4 mb-3">個人資料</h2>
+                                    </div>
+                                    <!-- 右側 -->
+                                    <div class="flex-grow-1">
+                                        <!-- 頭貼 -->
+                                        <div class="mb-4">
+                                            <img
+                                                src="/web-layout-training-vite/assets/avatar-QGHQ479s.png"
+                                                alt="user-image"
+                                                class="rounded-circle me-1"
+                                            />
+                                            <label
+                                                for="fileUpload"
+                                                class="btn border rounded-3 align-bottom"
+                                                ><span
+                                                    class="material-icons-outlined me-1 align-bottom"
+                                                >
+                                                    file_upload </span
+                                                >更新頭貼</label
+                                            >
+                                            <input
+                                                type="file"
+                                                name="fileUpload"
+                                                id="fileUpload"
+                                                class="d-none"
+                                            />
+                                        </div>
+                                        <!-- 姓名 -->
+                                        <div class="mb-4">
+                                            <div class="form-floating">
+                                                <input
+                                                    type="text"
+                                                    class="form-control border rounded-3"
+                                                    id="userName"
+                                                    placeholder="Mokumaru"
+                                                    value="Mokumaru"
+                                                />
+                                                <label for="userName"
+                                                    >姓名</label
+                                                >
+                                            </div>
+                                        </div>
+                                        <!-- 性別 -->
+                                        <div class="mb-4">
+                                            <p class="mb-2">性別</p>
+                                            <div class="px-2">
+                                                <div
+                                                    class="form-check form-check-inline me-4"
+                                                >
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gender"
+                                                        id="gender-female"
+                                                        value="female"
+                                                        checked
+                                                    />
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gender-female"
+                                                        >女性</label
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="form-check form-check-inline me-4"
+                                                >
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gender"
+                                                        id="gender-male"
+                                                        value="male"
+                                                    />
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gender-male"
+                                                        >男性</label
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="form-check form-check-inline"
+                                                >
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gender"
+                                                        id="gender-unwilling"
+                                                        value="unwilling"
+                                                    />
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gender-unwilling"
+                                                        >不願透露</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 生日 -->
+                                        <div class="mb-4">
+                                            <div class="form-floating">
+                                                <input
+                                                    type="text"
+                                                    class="form-control border rounded-3"
+                                                    id="userBirthday"
+                                                    placeholder="2000/01/10"
+                                                    value="2000/01/10"
+                                                />
+                                                <label for="userBirthday"
+                                                    >生日</label
+                                                >
+                                            </div>
+                                        </div>
+                                        <!-- 密碼 -->
+                                        <div class="mb-4">
+                                            <p class="mb-2">密碼</p>
+                                            <input
+                                                type="password"
+                                                name="password"
+                                                id="userPassword"
+                                                class="d-none"
+                                            />
+                                            <label
+                                                for="userPassword"
+                                                class="gap-1 border rounded-3 user-password-btn"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#editPasswordModal"
+                                                >修改密碼<span
+                                                    class="material-icons-outlined align-top"
+                                                >
+                                                    keyboard_arrow_right
+                                                </span></label
+                                            >
+                                            <!-- 更新密碼 -->
+                                            <div class="modal fade" id="editPasswordModal" tabindex="-1">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div
+                                                            class="modal-header"
+                                                        >
+                                                            <h5
+                                                                class="modal-title"
+                                                            >
+                                                                更新密碼
+                                                            </h5>
+                                                            <button
+                                                                type="button"
+                                                                class="btn-close"
+                                                                data-bs-dismiss="modal"
+                                                                aria-label="Close"
+                                                            ></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div
+                                                                class="form-floating mb-3"
+                                                            >
+                                                                <input
+                                                                    type="password"
+                                                                    class="form-control"
+                                                                    id="newPassword"
+                                                                    placeholder="新密碼"
+                                                                />
+                                                                <label
+                                                                    for="newPassword"
+                                                                    >新密碼</label
+                                                                >
+                                                            </div>
+                                                            <div
+                                                                class="form-floating"
+                                                            >
+                                                                <input
+                                                                    type="password"
+                                                                    class="form-control"
+                                                                    id="againPassword"
+                                                                    placeholder="再次密碼"
+                                                                />
+                                                                <label
+                                                                    for="againPassword"
+                                                                    >再次密碼</label
+                                                                >
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="modal-footer"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="btn btn-dark gap-1"
+                                                                data-bs-dismiss="modal"
+                                                            >
+                                                                更新密碼
+                                                                <span
+                                                                    class="material-icons-outlined align-top"
+                                                                >
+                                                                    keyboard_arrow_right
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 信箱 -->
+                                        <div class="mb-4">
+                                            <div class="form-floating">
+                                                <input
+                                                    type="email"
+                                                    class="form-control border rounded-3"
+                                                    id="userEmail"
+                                                    placeholder="mokumaru@mail.com"
+                                                    value="mokumaru@mail.com"
+                                                />
+                                                <label for="userEmail"
+                                                    >信箱</label
+                                                >
+                                                <div class="form-text">
+                                                    盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 聯絡電話 -->
+                                        <div class="mb-4">
+                                            <div class="form-floating">
+                                                <input
+                                                    type="tel"
+                                                    class="form-control border rounded-3"
+                                                    id="userTel"
+                                                    placeholder="09-1234-5678"
+                                                    value="09-1234-5678"
+                                                />
+                                                <label for="userTel"
+                                                    >聯絡電話</label
+                                                >
+                                            </div>
+                                        </div>
+                                        <!-- 通訊地址 -->
+                                        <div>
+                                            <div class="form-floating">
+                                                <input
+                                                    type="text"
+                                                    class="form-control border rounded-3"
+                                                    id="userAddress"
+                                                    placeholder="高雄市三民區九如一路 87 號"
+                                                    value="高雄市三民區九如一路 87 號"
+                                                />
+                                                <label for="userAddress"
+                                                    >通訊地址</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 重新填寫/儲存更新 -->
+                                <div
+                                    class="d-flex justify-content-center gap-4"
+                                >
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-dark gap-1 rounded-3"
+                                    >
+                                        匯出 PDF<span
+                                            class="material-icons-outlined align-top"
+                                        >
+                                            keyboard_arrow_right
+                                        </span>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-dark gap-1 rounded-3"
+                                    >
+                                        儲存更新<span
+                                            class="material-icons-outlined align-top"
+                                        >
+                                            keyboard_arrow_right
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
 
                             <!-- 預約記錄區塊 -->
@@ -1561,27 +1841,31 @@
                 </div>
             </div>
         </main>
-        <div class="container d-flex py-5">
-  <ul class="nav me-auto">
-    <li class="nav-item">
-      <a class="nav-link py-2 px-4" href="#">服務方案</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link px-4" href="#">關於職旅</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link px-4" href="#">聯絡我們</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link px-4" href="#">隱私權政策</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link px-4" href="#">用戶條款</a>
-    </li>
-  </ul>
-  <p class="copyright-notice">
-    Copyright © 2025 職旅 workway. All rights reserved.
-  </p>
-</div>
+        <footer class="footer border-top">
+  <div class="container d-flex py-5">
+    <nav class="me-auto">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link py-2 px-4" href="#">服務方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="#">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="#">聯絡我們</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="#">隱私權政策</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="#">用戶條款</a>
+        </li>
+      </ul>
+    </nav>
+      <p class="copyright-notice">
+        Copyright © 2025 職旅 workway. All rights reserved.
+      </p>
+  </div>
+</footer>
     </body>
 </html>
