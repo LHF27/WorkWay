@@ -1,3 +1,16 @@
-.index-title {
-  font-size: 100px;
+.side-width {
+  width: 300px;
+}
+
+.user-btn {
+  padding: 12px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.tab-btn-bg {
+  .nav-link{
+    background-color: $white;
+  }
+
 }
