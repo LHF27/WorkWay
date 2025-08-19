@@ -1,5 +1,7 @@
-.side-width {
-  width: 300px;
+@media (min-width: 992px) {
+  .side-width {
+    width: 300px;
+  }
 }
 
 .user-btn {
@@ -12,5 +14,20 @@
   .nav-link{
     background-color: $white;
   }
+}
 
+.modal-custom-width {
+  max-width: 480px;
+}
+
+@media (min-width: 992px) {
+  .lg-border {
+    border: 1px solid $natural-85;
+  }
+}
+
+.recodrHistory-list {
+  padding-top: 10px ;
+  padding-bottom: 10px ;
+  color: $natural-50;
 }
